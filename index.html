@@ -1,19 +1,25 @@
 <!doctype html>
 
 <head>
-	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
 </head>
 
-<body>
-
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
-	</form>
-
+<body class="bg-dark text-white">
+    <h1>CHOOSE YOUR SEARCH ENGINE</h1>
+    <div class="center bg-light ">
+        <form>
+            <div class="col"><input type="text" class="form-control" name="q" id="searchbox" placeholder="Begin Search Here" /></div>
+            <div class='row'>
+                <div class="col"><label class="text-secondary"><input type="radio" name="engine" value="google"/>Google</label></div>
+                <div class="col"><label class="text-secondary"><input type="radio" name="engine" value="duckduck"/>DuckDuckGo</label></div>
+                <div class="col"><label class="text-secondary"><input type="radio" name="engine" value="bing"/>Bing</label></div>
+                <div class="col"><label class="text-secondary"><input type="radio" name="engine" value="ask"/>Ask</label></div>
+            </div><button value="Go!" class="btn btn-primary btn-lg btn-block">Go!</button></form>
+    </div>
+</body>
 </body>
